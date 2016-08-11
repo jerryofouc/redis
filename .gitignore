@@ -19,3 +19,5 @@ release.h
 src/transfer.sh
 src/configs
 src/redis-server.dSYM
+.idea
+CMakeLists.txt

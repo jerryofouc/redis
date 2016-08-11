@@ -842,7 +842,7 @@ void readQueryFromClient(aeEventLoop *el, int fd, void *privdata, int mask) {
             freeClient(c);
             return;
         }
-    } else if (nread == 0) {
+    } else if (nread == 0) {//空的
         redisLog(REDIS_VERBOSE, "Client closed connection");
         freeClient(c);
         return;
